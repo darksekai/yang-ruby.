@@ -1,0 +1,36 @@
+<html>
+ <body>
+ 	<label for="string">string, please:   </label>
+ 	<input type="text" id="myinput"></input>
+ 	<span id="myspan"></span>
+ 	<br/>
+ 	<button onclick="double();">Double!</button>
+ 	<button onclick="uppercase();">uppercase!</button>
+ 	<button onclick="doubleUppercase();">double uppercase!</button>
+ 	<script>
+
+ 	function doubleUppercase() {
+ 		//1. find the text box
+ 		 var stringInput = document.getElementById("myinput");
+
+ 		//2. take out the fact
+ 		var myString = stringInput.value;
+ 		var doublestring = myString + myString;
+ 		//3.double the text
+ 		var doubleUppercasestring = doublestring.toUpperCase();
+
+ 		//4.find the span
+ 		var myspan =  document.getElementById("myspan");
+
+ 		//5.put the double string in the span
+ 		myspan.textContent = doubleUppercasestring;
+
+
+ 		console.log(myString);
+ 	}
+
+
+ 		
+ 	</script>
+ 	</body>
+ </html>
